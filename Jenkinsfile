@@ -18,7 +18,7 @@ node {
    
    stage('Deploy Spring Boot Application') {
        
-        sh "docker run -d -p 8888:8080 denisdbell/petclinic-deploy"
+        sh "docker run -d -p 8090:8080 denisdbell/petclinic-deploy"
    }
 
 }
