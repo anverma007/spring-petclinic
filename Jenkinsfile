@@ -18,7 +18,7 @@ node {
    
    stage('Deploy Spring Boot Application') {
        
-        sh "docker run --name java-deploy-container --volumes-from maven-build-container -d -p 8080:8080 denisdbell/petclinic-deploy"
+        sh "docker run --name java-deploy-container --volumes-from maven-build -d -p 8080:8080 denisdbell/petclinic-deploy"
    }
 
 }
